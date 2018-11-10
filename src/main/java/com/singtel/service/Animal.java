@@ -1,6 +1,6 @@
 package com.singtel.service;
 
-import com.singtel.service.enums.MessageEnum;
+
 import com.singtel.vo.AnimalProperties;
 
 public abstract class Animal {
