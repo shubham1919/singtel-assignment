@@ -6,6 +6,7 @@ import com.singtel.service.Fish;
 import com.singtel.service.impl.Caterpillar;
 import com.singtel.service.impl.Chicken;
 import com.singtel.service.impl.ClownFish;
+import com.singtel.service.impl.CountAnimals;
 import com.singtel.service.impl.Dolphin;
 import com.singtel.service.impl.Duck;
 import com.singtel.service.impl.Parrot;
@@ -58,5 +59,14 @@ public class App
         
         caterpillar.changeToButerfly();
         System.out.println("ButterFly : 1." + caterpillar.fly() + " 2." + caterpillar.sing() + " 3." + caterpillar.walk() + " 4." + caterpillar.swim());
+        
+        Object[] objects = new Object[] {bird, rooster, chicken, duck, parrotWithDog, parrotWithCat, parrotWithRooster,
+        		fish, shark, clownFish, dolphin, caterpillar};
+        CountAnimals countAnimals = new CountAnimals();
+        System.out.println("Animlas that can fly : " + countAnimals.numberOfAnimalsThatCanFly(objects));
+        System.out.println("Animlas that can walk : " + countAnimals.numberOfAnimalsThatCanWalk(objects));
+        System.out.println("Animlas that can sing : " + countAnimals.numberOfAnimalsThatCanSing(objects));
+        System.out.println("Animlas that can swim : " + countAnimals.numberOfAnimalsThatCanSwim(objects));
+        
     }
 }
