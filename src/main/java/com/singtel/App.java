@@ -3,6 +3,7 @@ package com.singtel;
 import com.singtel.service.Animal;
 import com.singtel.service.Bird;
 import com.singtel.service.Fish;
+import com.singtel.service.impl.Caterpillar;
 import com.singtel.service.impl.Chicken;
 import com.singtel.service.impl.ClownFish;
 import com.singtel.service.impl.Dolphin;
@@ -51,5 +52,11 @@ public class App
         
         Animal dolphin = new Dolphin();
         System.out.println("dolphin : 1." + dolphin.fly() + " 2." + dolphin.sing() + " 3." + dolphin.walk() + " 4." + dolphin.swim());
+        
+        Caterpillar caterpillar = new Caterpillar();
+        System.out.println("caterpillar : 1." + caterpillar.fly() + " 2." + caterpillar.sing() + " 3." + caterpillar.walk() + " 4." + caterpillar.swim());
+        
+        caterpillar.changeToButerfly();
+        System.out.println("ButterFly : 1." + caterpillar.fly() + " 2." + caterpillar.sing() + " 3." + caterpillar.walk() + " 4." + caterpillar.swim());
     }
 }
